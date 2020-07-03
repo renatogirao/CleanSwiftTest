@@ -16,7 +16,7 @@ class ServiceInteractor {
     static private let key = "84a42ea19fmshd991bd7c8da3cbep16ab66jsnb113864547f2"
     static private let limitCards = 30
 
-    class func serviceLoadCards(page: Int, onComplete: @escaping (Card?) -> Void ) {
+    class func serviceLoadCards(page: Int, onComplete: @escaping (CardsResponse?) -> Void ) {
         
         AF.request(basepath).responseJSON { (response) in
             guard let data = response.data,
@@ -25,6 +25,7 @@ class ServiceInteractor {
                     onComplete(nil)
                     return
             }
+            onComplete(cardInfo)
         }
     }
 }
