@@ -17,18 +17,14 @@ class CardsResponse: Codable {
 struct CardData : Codable {
     
     let classes: String
+    let filterTypes: String
     let cards : [Card]
     
-    enum classes {
-        case Druid
-        case Hunter
-        case Mage
-        case Paladin
-        case Priest
-        case Rogue
-        case Shaman
-        case Warlock
-        case Warrior
-        case Dream
+    enum filterTypes: String, CodingKey {
+        case classType = "class"
+        case race = "Race"
+        case quality = "Quality"
+        case type = "Type"
+        case faction = "Faction"
     }
 }

@@ -7,3 +7,54 @@
 //
 
 import Foundation
+import UIKit
+
+enum classType: String {
+    case DeathKnight = "Death Knight"
+    case Druid
+    case Hunter
+    case Mage
+    case Paladin
+    case Priest
+    case Rogue
+    case Shaman
+    case Warlock
+    case Warrior
+    case Dream
+    case Neutral
+    case DemonHunter = "Demon Hunter"
+}
+
+enum race: String {
+    case Demon
+    case Dragon
+    case Elemental
+    case Mech
+    case Murloc
+    case Beast
+    case Pirate
+    case Totem
+}
+
+enum quality: String {
+    case Free
+    case Common
+    case Rare
+    case Epic
+    case Legendary
+}
+
+enum type: String {
+    case Hero
+    case Minion
+    case Spell
+    case Enchantment
+    case Weapon
+    case HeroPower = "Hero Power"
+}
+
+enum faction: String {
+    case Horde
+    case Slliance
+    case Neutral
+}
