@@ -21,7 +21,7 @@ struct CardData : Codable {
     let cards : [Card]
     
     enum filterTypes: String, CodingKey {
-        case classType = "class"
+        case classType = "Class"
         case race = "Race"
         case quality = "Quality"
         case type = "Type"

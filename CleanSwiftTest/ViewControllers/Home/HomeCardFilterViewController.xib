@@ -40,7 +40,7 @@
                         <outlet property="delegate" destination="i5M-Pr-FkT" id="0rG-re-YaB"/>
                     </connections>
                 </collectionView>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="TOI-8F-fRG" customClass="ClassCardCollectionView" customModule="CleanSwiftTest" customModuleProvider="target">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="TOI-8F-fRG" customClass="RaceCardCollectionView">
                     <rect key="frame" x="12" y="351" width="390" height="129"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>

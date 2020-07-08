@@ -7,15 +7,17 @@
 //
 
 import UIKit
+import AlamofireNetworkActivityIndicator
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let rootVC = HomeCardFilterViewController(nibName: HomeCardFilterViewController, bundle: nil)
         let navigationController = UINavigationController(rootViewController: rootVC)
+        NetworkActivityIndicatorManager.shared.isEnabled = true
+        
         return true
     }
 

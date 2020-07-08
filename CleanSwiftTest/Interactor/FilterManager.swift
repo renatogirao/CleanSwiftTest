@@ -9,6 +9,12 @@
 import Foundation
 import UIKit
 
+class filterManager {
+    func applyFilter(typeChoosed: String) {
+        
+    }
+}
+
 enum classType: String {
     case DeathKnight = "Death Knight"
     case Druid
@@ -57,4 +63,4 @@ enum faction: String {
     case Horde
     case Slliance
     case Neutral
-}
+    }

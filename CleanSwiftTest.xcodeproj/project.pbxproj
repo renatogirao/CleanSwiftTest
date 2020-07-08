@@ -23,6 +23,17 @@
 		57C0E5CE24B520C7009C91B1 /* ClassCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C0E5CC24B520C7009C91B1 /* ClassCardCollectionViewCell.swift */; };
 		57C0E5CF24B520C7009C91B1 /* ClassCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57C0E5CD24B520C7009C91B1 /* ClassCardCollectionViewCell.xib */; };
 		57C0E5D124B52230009C91B1 /* ClassCardCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C0E5D024B52230009C91B1 /* ClassCardCollectionView.swift */; };
+		57CE54F224B67E3C00018199 /* RaceCardCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE54F124B67E3C00018199 /* RaceCardCollectionView.swift */; };
+		57CE54F424B67E7100018199 /* QualityCardCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE54F324B67E7100018199 /* QualityCardCollectionView.swift */; };
+		57CE54F624B67E8600018199 /* TypeCardCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE54F524B67E8600018199 /* TypeCardCollectionView.swift */; };
+		57CE54F824B67E9600018199 /* FactionCardCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE54F724B67E9600018199 /* FactionCardCollectionView.swift */; };
+		57CE550324B680F000018199 /* RaceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE550224B680F000018199 /* RaceCollectionViewCell.swift */; };
+		57EB8A6E24B6813000FB50EE /* FactionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EB8A6C24B6813000FB50EE /* FactionCollectionViewCell.swift */; };
+		57EB8A6F24B6813000FB50EE /* FactionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57EB8A6D24B6813000FB50EE /* FactionCollectionViewCell.xib */; };
+		57EB8A7224B6814600FB50EE /* TypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EB8A7024B6814600FB50EE /* TypeCollectionViewCell.swift */; };
+		57EB8A7324B6814600FB50EE /* TypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57EB8A7124B6814600FB50EE /* TypeCollectionViewCell.xib */; };
+		57EB8A7624B6815500FB50EE /* QualityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EB8A7424B6815500FB50EE /* QualityCollectionViewCell.swift */; };
+		57EB8A7724B6815500FB50EE /* QualityCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57EB8A7524B6815500FB50EE /* QualityCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +68,18 @@
 		57C0E5CC24B520C7009C91B1 /* ClassCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		57C0E5CD24B520C7009C91B1 /* ClassCardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassCardCollectionViewCell.xib; sourceTree = "<group>"; };
 		57C0E5D024B52230009C91B1 /* ClassCardCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCardCollectionView.swift; sourceTree = "<group>"; };
+		57CE54F124B67E3C00018199 /* RaceCardCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceCardCollectionView.swift; sourceTree = "<group>"; };
+		57CE54F324B67E7100018199 /* QualityCardCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityCardCollectionView.swift; sourceTree = "<group>"; };
+		57CE54F524B67E8600018199 /* TypeCardCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCardCollectionView.swift; sourceTree = "<group>"; };
+		57CE54F724B67E9600018199 /* FactionCardCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionCardCollectionView.swift; sourceTree = "<group>"; };
+		57CE550124B680ED00018199 /* RaceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RaceCollectionViewCell.xib; path = /Users/renatos.girao/Documents/Profissional/Projetos/Testes/CleanSwiftTest/CleanSwiftTest/ViewControllers/Home/Collections/Cells/RaceCollectionViewCell.xib; sourceTree = "<absolute>"; };
+		57CE550224B680F000018199 /* RaceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RaceCollectionViewCell.swift; path = /Users/renatos.girao/Documents/Profissional/Projetos/Testes/CleanSwiftTest/CleanSwiftTest/ViewControllers/Home/Collections/Cells/RaceCollectionViewCell.swift; sourceTree = "<absolute>"; };
+		57EB8A6C24B6813000FB50EE /* FactionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionCollectionViewCell.swift; sourceTree = "<group>"; };
+		57EB8A6D24B6813000FB50EE /* FactionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FactionCollectionViewCell.xib; sourceTree = "<group>"; };
+		57EB8A7024B6814600FB50EE /* TypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCollectionViewCell.swift; sourceTree = "<group>"; };
+		57EB8A7124B6814600FB50EE /* TypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeCollectionViewCell.xib; sourceTree = "<group>"; };
+		57EB8A7424B6815500FB50EE /* QualityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityCollectionViewCell.swift; sourceTree = "<group>"; };
+		57EB8A7524B6815500FB50EE /* QualityCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QualityCollectionViewCell.xib; sourceTree = "<group>"; };
 		6709C4F9DF3E9E4847A1EA4B /* Pods_CleanSwiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanSwiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA927972F43930F656132B4 /* Pods-CleanSwiftTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanSwiftTest.debug.xcconfig"; path = "Target Support Files/Pods-CleanSwiftTest/Pods-CleanSwiftTest.debug.xcconfig"; sourceTree = "<group>"; };
 		92BE36215E041B710C95BE25 /* Pods-CleanSwiftTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanSwiftTestTests.release.xcconfig"; path = "Target Support Files/Pods-CleanSwiftTestTests/Pods-CleanSwiftTestTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,11 +128,7 @@
 		571CEEE424AE9162009CF4A1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				57087A9C24AF1F1100C12C79 /* HomeCardFilterViewController.swift */,
-				57087A9D24AF1F1100C12C79 /* HomeCardFilterViewController.xib */,
-				57C0E5D024B52230009C91B1 /* ClassCardCollectionView.swift */,
-				57C0E5CC24B520C7009C91B1 /* ClassCardCollectionViewCell.swift */,
-				57C0E5CD24B520C7009C91B1 /* ClassCardCollectionViewCell.xib */,
+				57CE54F924B6806500018199 /* Home */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -162,6 +181,46 @@
 				5786776124AD4C70004FA042 /* Info.plist */,
 			);
 			path = CleanSwiftTestTests;
+			sourceTree = "<group>";
+		};
+		57CE54F924B6806500018199 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				57087A9C24AF1F1100C12C79 /* HomeCardFilterViewController.swift */,
+				57087A9D24AF1F1100C12C79 /* HomeCardFilterViewController.xib */,
+				57CE54FA24B6806B00018199 /* Collections */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		57CE54FA24B6806B00018199 /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				57CE54F724B67E9600018199 /* FactionCardCollectionView.swift */,
+				57CE54F524B67E8600018199 /* TypeCardCollectionView.swift */,
+				57CE54F324B67E7100018199 /* QualityCardCollectionView.swift */,
+				57C0E5D024B52230009C91B1 /* ClassCardCollectionView.swift */,
+				57CE54F124B67E3C00018199 /* RaceCardCollectionView.swift */,
+				57CE54FB24B6807F00018199 /* Cells */,
+			);
+			path = Collections;
+			sourceTree = "<group>";
+		};
+		57CE54FB24B6807F00018199 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				57C0E5CC24B520C7009C91B1 /* ClassCardCollectionViewCell.swift */,
+				57EB8A7024B6814600FB50EE /* TypeCollectionViewCell.swift */,
+				57CE550224B680F000018199 /* RaceCollectionViewCell.swift */,
+				57EB8A7424B6815500FB50EE /* QualityCollectionViewCell.swift */,
+				57EB8A6C24B6813000FB50EE /* FactionCollectionViewCell.swift */,
+				57C0E5CD24B520C7009C91B1 /* ClassCardCollectionViewCell.xib */,
+				57EB8A7124B6814600FB50EE /* TypeCollectionViewCell.xib */,
+				57CE550124B680ED00018199 /* RaceCollectionViewCell.xib */,
+				57EB8A7524B6815500FB50EE /* QualityCollectionViewCell.xib */,
+				57EB8A6D24B6813000FB50EE /* FactionCollectionViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		75AEFC572194CFA9A1B4B16D /* Frameworks */ = {
@@ -272,6 +331,9 @@
 				5786775524AD4C6F004FA042 /* LaunchScreen.storyboard in Resources */,
 				57087A9F24AF1F1100C12C79 /* HomeCardFilterViewController.xib in Resources */,
 				5786775224AD4C6F004FA042 /* Assets.xcassets in Resources */,
+				57EB8A7324B6814600FB50EE /* TypeCollectionViewCell.xib in Resources */,
+				57EB8A7724B6815500FB50EE /* QualityCollectionViewCell.xib in Resources */,
+				57EB8A6F24B6813000FB50EE /* FactionCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,15 +415,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57EB8A7224B6814600FB50EE /* TypeCollectionViewCell.swift in Sources */,
+				57CE54F824B67E9600018199 /* FactionCardCollectionView.swift in Sources */,
 				5786774924AD4C6B004FA042 /* AppDelegate.swift in Sources */,
 				571CEEE224AE9134009CF4A1 /* ServiceInteractor.swift in Sources */,
+				57EB8A6E24B6813000FB50EE /* FactionCollectionViewCell.swift in Sources */,
 				57087A9224AF075800C12C79 /* CardsResponse.swift in Sources */,
+				57EB8A7624B6815500FB50EE /* QualityCollectionViewCell.swift in Sources */,
 				57087A9E24AF1F1100C12C79 /* HomeCardFilterViewController.swift in Sources */,
 				5786774B24AD4C6B004FA042 /* SceneDelegate.swift in Sources */,
 				57C0E5D124B52230009C91B1 /* ClassCardCollectionView.swift in Sources */,
 				5786776B24AE4106004FA042 /* Card.swift in Sources */,
 				57C0E5CE24B520C7009C91B1 /* ClassCardCollectionViewCell.swift in Sources */,
+				57CE54F424B67E7100018199 /* QualityCardCollectionView.swift in Sources */,
 				57087AA524B2AD2F00C12C79 /* FilterManager.swift in Sources */,
+				57CE54F624B67E8600018199 /* TypeCardCollectionView.swift in Sources */,
+				57CE54F224B67E3C00018199 /* RaceCardCollectionView.swift in Sources */,
+				57CE550324B680F000018199 /* RaceCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 import UIKit
 
 class HomeCardFilterViewController: UIViewController {
-
+    
     @IBOutlet weak var classCollectionView: UICollectionView!
     @IBOutlet weak var raceCollectionView: UICollectionView!
     @IBOutlet weak var qualityCollectionView: UICollectionView!
@@ -22,24 +22,17 @@ class HomeCardFilterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
-
+    
+    func loadCards() {
+        ServiceInteractor.loadCards(<#T##self: ServiceInteractor##ServiceInteractor#>)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 
@@ -51,13 +44,22 @@ extension HomeCardFilterViewController : UICollectionViewDataSource, UICollectio
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-            return arrayCardsClass.count
-        }
+    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cardCell", for: indexPath as IndexPath) as? ClassCardCollectionViewCell
+        if collectionView == ClassCardCollectionView {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "classCardCell", for: indexPath as IndexPath) as? ClassCardCollectionViewCell
+        }
+        if collectionView == RaceCardCollectionView {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cardCell", for: indexPath as IndexPath) as? RaceCardCollectionView
+        }
+        if collectionView == TypeCardCollectionView {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cardCell", for: indexPath as IndexPath) as? ClassCardCollectionViewCell
+        }
+    }
         
+        return cell
     }
     
     

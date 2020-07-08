@@ -7,6 +7,7 @@ target 'CleanSwiftTest' do
   # Pods for CleanSwiftTest
   pod 'Alamofire', '~> 5.2'
   pod 'Kingfisher', '~> 5.0'
+  pod 'AlamofireNetworkActivityIndicator', '~> 3.1'
 
   target 'CleanSwiftTestTests' do
     inherit! :search_paths
