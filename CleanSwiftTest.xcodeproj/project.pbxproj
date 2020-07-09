@@ -19,7 +19,6 @@
 		5786775224AD4C6F004FA042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5786775124AD4C6F004FA042 /* Assets.xcassets */; };
 		5786775524AD4C6F004FA042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5786775324AD4C6F004FA042 /* LaunchScreen.storyboard */; };
 		5786776024AD4C70004FA042 /* CleanSwiftTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5786775F24AD4C70004FA042 /* CleanSwiftTestTests.swift */; };
-		5786776B24AE4106004FA042 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5786776A24AE4106004FA042 /* Card.swift */; };
 		57C0E5CE24B520C7009C91B1 /* ClassCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C0E5CC24B520C7009C91B1 /* ClassCardCollectionViewCell.swift */; };
 		57C0E5CF24B520C7009C91B1 /* ClassCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57C0E5CD24B520C7009C91B1 /* ClassCardCollectionViewCell.xib */; };
 		57C0E5D124B52230009C91B1 /* ClassCardCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C0E5D024B52230009C91B1 /* ClassCardCollectionView.swift */; };
@@ -34,6 +33,7 @@
 		57EB8A7324B6814600FB50EE /* TypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57EB8A7124B6814600FB50EE /* TypeCollectionViewCell.xib */; };
 		57EB8A7624B6815500FB50EE /* QualityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EB8A7424B6815500FB50EE /* QualityCollectionViewCell.swift */; };
 		57EB8A7724B6815500FB50EE /* QualityCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57EB8A7524B6815500FB50EE /* QualityCollectionViewCell.xib */; };
+		57EB8A7924B79E8A00FB50EE /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EB8A7824B79E8A00FB50EE /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +64,6 @@
 		5786775B24AD4C6F004FA042 /* CleanSwiftTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanSwiftTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5786775F24AD4C70004FA042 /* CleanSwiftTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanSwiftTestTests.swift; sourceTree = "<group>"; };
 		5786776124AD4C70004FA042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5786776A24AE4106004FA042 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		57C0E5CC24B520C7009C91B1 /* ClassCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		57C0E5CD24B520C7009C91B1 /* ClassCardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassCardCollectionViewCell.xib; sourceTree = "<group>"; };
 		57C0E5D024B52230009C91B1 /* ClassCardCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCardCollectionView.swift; sourceTree = "<group>"; };
@@ -80,6 +79,7 @@
 		57EB8A7124B6814600FB50EE /* TypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeCollectionViewCell.xib; sourceTree = "<group>"; };
 		57EB8A7424B6815500FB50EE /* QualityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityCollectionViewCell.swift; sourceTree = "<group>"; };
 		57EB8A7524B6815500FB50EE /* QualityCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QualityCollectionViewCell.xib; sourceTree = "<group>"; };
+		57EB8A7824B79E8A00FB50EE /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = CleanSwiftTest/Card.swift; sourceTree = SOURCE_ROOT; };
 		6709C4F9DF3E9E4847A1EA4B /* Pods_CleanSwiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanSwiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA927972F43930F656132B4 /* Pods-CleanSwiftTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanSwiftTest.debug.xcconfig"; path = "Target Support Files/Pods-CleanSwiftTest/Pods-CleanSwiftTest.debug.xcconfig"; sourceTree = "<group>"; };
 		92BE36215E041B710C95BE25 /* Pods-CleanSwiftTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanSwiftTestTests.release.xcconfig"; path = "Target Support Files/Pods-CleanSwiftTestTests/Pods-CleanSwiftTestTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -165,8 +165,8 @@
 			children = (
 				571CEEE524AE916D009CF4A1 /* Presenter */,
 				571CEEE424AE9162009CF4A1 /* ViewControllers */,
-				5786776A24AE4106004FA042 /* Card.swift */,
 				57087A9124AF075800C12C79 /* CardsResponse.swift */,
+				57EB8A7824B79E8A00FB50EE /* Card.swift */,
 				571CEEE324AE9155009CF4A1 /* Interactor */,
 				57087A9724AF189F00C12C79 /* Utils */,
 				5786775624AD4C6F004FA042 /* Info.plist */,
@@ -421,11 +421,11 @@
 				571CEEE224AE9134009CF4A1 /* ServiceInteractor.swift in Sources */,
 				57EB8A6E24B6813000FB50EE /* FactionCollectionViewCell.swift in Sources */,
 				57087A9224AF075800C12C79 /* CardsResponse.swift in Sources */,
+				57EB8A7924B79E8A00FB50EE /* Card.swift in Sources */,
 				57EB8A7624B6815500FB50EE /* QualityCollectionViewCell.swift in Sources */,
 				57087A9E24AF1F1100C12C79 /* HomeCardFilterViewController.swift in Sources */,
 				5786774B24AD4C6B004FA042 /* SceneDelegate.swift in Sources */,
 				57C0E5D124B52230009C91B1 /* ClassCardCollectionView.swift in Sources */,
-				5786776B24AE4106004FA042 /* Card.swift in Sources */,
 				57C0E5CE24B520C7009C91B1 /* ClassCardCollectionViewCell.swift in Sources */,
 				57CE54F424B67E7100018199 /* QualityCardCollectionView.swift in Sources */,
 				57087AA524B2AD2F00C12C79 /* FilterManager.swift in Sources */,

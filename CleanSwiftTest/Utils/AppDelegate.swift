@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let rootVC = HomeCardFilterViewController(nibName: HomeCardFilterViewController, bundle: nil)
         let navigationController = UINavigationController(rootViewController: rootVC)
         NetworkActivityIndicatorManager.shared.isEnabled = true
+        let initialViewController = HomeCardFilterViewController.self
         
         return true
     }

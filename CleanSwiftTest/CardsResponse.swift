@@ -11,7 +11,7 @@ import Foundation
 class CardsResponse: Codable {
     let code: Int?
     var status: String?
-    let data: CardData?
+    let data: CardData
 }
 
 struct CardData : Codable {

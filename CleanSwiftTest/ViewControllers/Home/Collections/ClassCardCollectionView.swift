@@ -10,9 +10,7 @@ import UIKit
 
 class ClassCardCollectionView: UICollectionView {
     
-    let cardsCollectionViewCell: UICollectionViewCell = {
-         
-    }
+    let cardsCollectionViewCell: UICollectionViewCell
     
     func setupViews() {
         
