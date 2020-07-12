@@ -27,6 +27,9 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="144" height="112"/>
+            <connections>
+                <outlet property="lblFilterType" destination="GxW-9j-fk1" id="64c-lr-pRp"/>
+            </connections>
             <point key="canvasLocation" x="123.18840579710145" y="101.78571428571428"/>
         </collectionViewCell>
     </objects>

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class HomeCardFilterViewController: UIViewController {
     
@@ -19,27 +20,26 @@ class HomeCardFilterViewController: UIViewController {
     var arrayCardsQuality : [Card]
     var arrayCardsType : [Card]
     var arrayCardsFaction : [Card]
-    
-    
     var loadingCards = false
+    let service : ServiceInteractor
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadCards()
+        loadCardsFilter()
     }
     
-    func loadCards() {
-        loadingCards = true
-        ServiceInteractor.loadCards(endpoint: .classEndpoint) { (info) in
+    func loadCardsFilter() {
+        
+        service.loadCards(endpoint: .classEndpoint, filterType: filterManager.faction) { (info) in
             if let info = info {
                 self.arrayCardsClass += info.data.cards
                 print("total: \(self.arrayCardsClass.count)")
                 DispatchQueue.main.async {
                     self.classCollectionView.reloadData()
+    
                 }
             }
         }
-        
-        
     }
 }
 
@@ -73,16 +73,20 @@ extension HomeCardFilterViewController : UICollectionViewDataSource, UICollectio
         case classCollectionView:
             cell = (collectionView.dequeueReusableCell(withReuseIdentifier: "classCardCell", for: indexPath as IndexPath) as? ClassCardCollectionViewCell)!
         case raceCollectionView:
-            cell = (collectionView.dequeueReusableCell(withReuseIdentifier: "classCardCell", for: indexPath as IndexPath) as? RaceCollectionViewCell)!
+            cell = (collectionView.dequeueReusableCell(withReuseIdentifier: "raceCardCell", for: indexPath as IndexPath) as? RaceCollectionViewCell)!
         case qualityCollectionView:
-            cell = (collectionView.dequeueReusableCell(withReuseIdentifier: "classCardCell", for: indexPath as IndexPath) as? QualityCollectionViewCell)!
+            cell = (collectionView.dequeueReusableCell(withReuseIdentifier: "qualityCardCell", for: indexPath as IndexPath) as? QualityCollectionViewCell)!
         case typeCollectionView:
-            cell = (collectionView.dequeueReusableCell(withReuseIdentifier: "classCardCell", for: indexPath as IndexPath) as? TypeCollectionViewCell)!
+            cell = (collectionView.dequeueReusableCell(withReuseIdentifier: "typeCardCell", for: indexPath as IndexPath) as? TypeCollectionViewCell)!
         case factionCollectionView:
-            cell = (collectionView.dequeueReusableCell(withReuseIdentifier: "classCardCell", for: indexPath as IndexPath) as? FactionCollectionViewCell)!
+            cell = (collectionView.dequeueReusableCell(withReuseIdentifier: "factionCardCell", for: indexPath as IndexPath) as? FactionCollectionViewCell)!
         default:
             print ("\nERRO AO SELECIONAR A COLLECTION\n")
         }
         return cell
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        <#code#>
+    }
+
 }

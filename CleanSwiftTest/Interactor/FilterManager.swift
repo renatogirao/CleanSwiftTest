@@ -10,10 +10,10 @@ import Foundation
 import UIKit
 
 class filterManager {
+    
     func applyFilter(typeChoosed: String) {
         
     }
-}
 
 enum classType: String {
     case DeathKnight = "Death Knight"
@@ -64,3 +64,4 @@ enum faction: String {
     case Slliance
     case Neutral
     }
+}

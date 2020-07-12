@@ -9,6 +9,7 @@ import UIKit
 
 class RaceCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet var lblFilterType: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         configCellLayout()

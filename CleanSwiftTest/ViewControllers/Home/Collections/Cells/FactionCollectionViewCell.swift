@@ -10,6 +10,8 @@ import UIKit
 
 class FactionCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var lblFilterType: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         configCellLayout()

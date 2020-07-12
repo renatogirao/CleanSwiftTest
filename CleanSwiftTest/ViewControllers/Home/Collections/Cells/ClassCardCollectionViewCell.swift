@@ -10,6 +10,8 @@ import UIKit
 
 class ClassCardCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var lblFilterType: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         configCellLayout()
@@ -21,4 +23,6 @@ class ClassCardCollectionViewCell: UICollectionViewCell {
         self.layer.cornerRadius = 8
     }
     
+    func prepareCell(with card: Card) {
+    }
 }

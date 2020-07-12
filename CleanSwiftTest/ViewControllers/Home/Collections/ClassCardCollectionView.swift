@@ -7,22 +7,11 @@
 //
 
 import UIKit
+import Alamofire
+import Kingfisher
 
 class ClassCardCollectionView: UICollectionView {
     
     let cardsCollectionViewCell: UICollectionViewCell
-    
-    func setupViews() {
-        
-        addSubview(cardsCollectionViewCell)
-    }
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
 
 }
