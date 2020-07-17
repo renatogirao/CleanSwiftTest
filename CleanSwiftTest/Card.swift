@@ -10,19 +10,26 @@ import Foundation
 import UIKit
 
 struct Card : Codable {
-    let imageGray: String
-    let imageGold: String
+    let img: String
+    let imgGold: String
     let cardID: String
-    let heroName: String
+    let name: String
     let deckID: String
-    let cardSet: String
     let cardType: String
     let faction: String
     let rarity: String
+    let race: String
     
     enum codingKeys: String, CodingKey {
         case deckID = "dbfId"
-        case heroName = "name"
+        case img
+        case imgGold
+        case cardID
+        case name
+        case cardType = "type"
+        case faction
+        case rarity
+        case race
     }
     
 }

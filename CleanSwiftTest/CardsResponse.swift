@@ -7,19 +7,8 @@
 //
 
 import Foundation
+import UIKit
 
-class CardsResponse: Codable {
-    let code: Int?
-    var status: String?
-    let data: CardData
-}
-
-struct CardData : Codable {
-    
-    let classes: String
-    let filterTypes: String
-    let cards : [Card]
-    
     enum filterTypes: String, CodingKey {
         case classType = "Class"
         case race = "Race"
@@ -27,4 +16,3 @@ struct CardData : Codable {
         case type = "Type"
         case faction = "Faction"
     }
-}

@@ -19,7 +19,7 @@ class CardFilteredCollectionViewCell: UICollectionViewCell {
     }
 
     func loadCellCard(with card: Card) {
-        if let url = URL(string: card.imageGold) {
+        if let url = URL(string: card.imgGold) {
             cardImage.kf.setImage(with: url)
         } else {
             cardImage.image = nil
