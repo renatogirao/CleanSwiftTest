@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/renatos.girao/Documents/Profissional/Projetos/Testes/CleanSwiftTest/CleanSwiftTest/TitleLabel.swift">
+   </FileRef>
+   <FileRef
       location = "group:CleanSwiftTest.xcodeproj">
    </FileRef>
    <FileRef

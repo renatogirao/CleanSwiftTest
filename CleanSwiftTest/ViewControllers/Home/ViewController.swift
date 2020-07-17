@@ -10,12 +10,54 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var filterTypesArr = ["Class", "Race", "Quality", "Type", "Faction"]
-    var classTypeArr = ["Death Knight", "Druid", "Hunter", "Mage", "Paladin", "Priest", "Rogue", "Shaman", "Warlock", "Warrior", "Dream", "Neutral", "Demon Hunter"]
-    var raceArr = ["Demon", "Dragon", "Elemental", "Mech", "Murloc", "Beast", "Pirate", "Totem"]
-    var qualityArr = ["Free", "Common", "Rare", "Epic", "Legendary"]
-    var typeArr = ["Hero", "Minion", "Spell", "Enchantment", "Weapon", "Hero Power"]
-    var factionArr = ["Horde", "Slliance", "Neutral"]
+    
+    var filterTypesArr : [TitleLabel] = [TitleLabel(titleLabel: "Class"),
+                                         TitleLabel(titleLabel: "Race"),
+                                         TitleLabel(titleLabel: "Quality"),
+                                         TitleLabel(titleLabel: "Type"),
+                                         TitleLabel(titleLabel: "Faction")]
+    
+    var classTypeArr : [TitleLabel] = [TitleLabel(titleLabel: "Death Knight"),
+                                       TitleLabel(titleLabel: "Druid"),
+                                       TitleLabel(titleLabel: "Hunter"),
+                                       TitleLabel(titleLabel: "Mage"),
+                                       TitleLabel(titleLabel: "Paladin"),
+                                       TitleLabel(titleLabel: "Priest"),
+                                       TitleLabel(titleLabel: "Rogue"),
+                                       TitleLabel(titleLabel: "Shaman"),
+                                       TitleLabel(titleLabel: "Warlock"),
+                                       TitleLabel(titleLabel: "Warrior"),
+                                       TitleLabel(titleLabel: "Dream"),
+                                       TitleLabel(titleLabel: "Neutral"),
+                                       TitleLabel(titleLabel: "Type"),
+                                       TitleLabel(titleLabel: "Demon Hunter")]
+    
+    var raceArr : [TitleLabel] = [TitleLabel(titleLabel: "Demon"),
+                                  TitleLabel(titleLabel: "Dragon"),
+                                  TitleLabel(titleLabel: "Elemental"),
+                                  TitleLabel(titleLabel: "Mech"),
+                                  TitleLabel(titleLabel: "Murloc"),
+                                  TitleLabel(titleLabel: "Beast"),
+                                  TitleLabel(titleLabel: "Pirate"),
+                                  TitleLabel(titleLabel: "Totem")]
+    
+    var qualityArr : [TitleLabel] = [TitleLabel(titleLabel: "Free"),
+                                     TitleLabel(titleLabel: "Common"),
+                                     TitleLabel(titleLabel: "Rare"),
+                                     TitleLabel(titleLabel: "Epic"),
+                                     TitleLabel(titleLabel: "Legendary")]
+    
+    var typeArr : [TitleLabel] = [TitleLabel(titleLabel: "Hero"),
+                                  TitleLabel(titleLabel: "Minion"),
+                                  TitleLabel(titleLabel: "Spell"),
+                                  TitleLabel(titleLabel: "Enchantment"),
+                                  TitleLabel(titleLabel: "Weapon"),
+                                  TitleLabel(titleLabel: "Herp"),
+                                  TitleLabel(titleLabel: "Power")]
+    
+    var factionArr : [TitleLabel] = [TitleLabel(titleLabel: "Horde"),
+                                  TitleLabel(titleLabel: "Slliane"),
+                                  TitleLabel(titleLabel: "Neutral")]
     
     fileprivate let classCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -146,8 +188,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CardCollectionViewCell
-        let label = UITextView(frame: CGRect(x: 5, y: 0, width: 60, height: 20))
-        
+        cell.cardLabel = self.classTypeArr[indexPath.row]
         return cell
     }
 }

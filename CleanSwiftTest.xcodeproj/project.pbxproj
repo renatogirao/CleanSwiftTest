@@ -15,6 +15,7 @@
 		57505B2524C1601100BB04E4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57505B2324C1601100BB04E4 /* ViewController.xib */; };
 		57505B2824C1794200BB04E4 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57505B2624C1794200BB04E4 /* CardCollectionViewCell.swift */; };
 		57505B2924C1794200BB04E4 /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57505B2724C1794200BB04E4 /* CardCollectionViewCell.xib */; };
+		575206A324C1940E0013E879 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575206A224C1940E0013E879 /* TitleLabel.swift */; };
 		5786774924AD4C6B004FA042 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5786774824AD4C6B004FA042 /* AppDelegate.swift */; };
 		5786774B24AD4C6B004FA042 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5786774A24AD4C6B004FA042 /* SceneDelegate.swift */; };
 		5786775224AD4C6F004FA042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5786775124AD4C6F004FA042 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		57505B2324C1601100BB04E4 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		57505B2624C1794200BB04E4 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		57505B2724C1794200BB04E4 /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
+		575206A224C1940E0013E879 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TitleLabel.swift; path = /Users/renatos.girao/Documents/Profissional/Projetos/Testes/CleanSwiftTest/CleanSwiftTest/TitleLabel.swift; sourceTree = "<absolute>"; };
 		5786774524AD4C6B004FA042 /* CleanSwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanSwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5786774824AD4C6B004FA042 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5786774A24AD4C6B004FA042 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				571CEEE524AE916D009CF4A1 /* Presenter */,
 				571CEEE424AE9162009CF4A1 /* ViewControllers */,
 				57EB8A7824B79E8A00FB50EE /* Card.swift */,
+				575206A224C1940E0013E879 /* TitleLabel.swift */,
 				571CEEE324AE9155009CF4A1 /* Interactor */,
 				57087A9724AF189F00C12C79 /* Utils */,
 				5786775624AD4C6F004FA042 /* Info.plist */,
@@ -392,6 +395,7 @@
 				5786774924AD4C6B004FA042 /* AppDelegate.swift in Sources */,
 				571CEEE224AE9134009CF4A1 /* ServiceInteractor.swift in Sources */,
 				57EB8A8024B9303200FB50EE /* CardFilteredCollectionViewCell.swift in Sources */,
+				575206A324C1940E0013E879 /* TitleLabel.swift in Sources */,
 				57EB8A7924B79E8A00FB50EE /* Card.swift in Sources */,
 				57505B2424C1601100BB04E4 /* ViewController.swift in Sources */,
 				57505B2824C1794200BB04E4 /* CardCollectionViewCell.swift in Sources */,
